@@ -16,12 +16,24 @@ body {
   font-family: "Barlow Condensed", sans-serif;
   background-color: #fffaf1;
 }
+.noisetexture {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  mix-blend-mode: soft-light;
+  opacity: 0.05;
+  pointer-events: none;
+  background-size: cover;
+}
 
 button {
   padding: 1rem;
   border: none;
   background-color: #fffaf1;
   color: #093a39;
+}
+section {
+  position: relative;
 }
 
 h1 {
@@ -31,6 +43,9 @@ h1 {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #fffaf1;
   text-align: center;
+  margin-top: 0rem;
+  position: absolute;
+  top: 40%;
 }
 
 .container {
@@ -81,6 +96,8 @@ h1 {
 }
 .right {
   background-color: #f8ab21;
+
+  transition: 1s ease;
 }
 
 /* Media Query */
