@@ -17,6 +17,13 @@ body {
   background-color: #fffaf1;
 }
 
+button {
+  padding: 1rem;
+  border: none;
+  background-color: #fffaf1;
+  color: #093a39;
+}
+
 h1 {
   font-size: 140px;
   font-weight: 700;
