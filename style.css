@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mygreen: #093a39;
+  --myyellow: #f8ab21;
+  --mywhite: #fffaf1;
+}
+
+body {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.mainheading {
+  position: absolute;
+  left: 50%;
+  margin-top: 80px;
+}
+
+.left,
+.right {
+  width: 100%;
+  height: 100%;
+}
+
+.left {
+  background-color: #093a39;
+}
+.right {
+  background-color: #f8ab21;
+}
