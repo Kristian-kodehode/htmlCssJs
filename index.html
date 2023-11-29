@@ -27,26 +27,63 @@
       src="script.js"
       defer
     ></script>
+    <script
+      src="modal.js"
+      defer
+    ></script>
     <title>testing htmlcssjs</title>
   </head>
   <body>
-    <button class="resetbutton">RESET</button>
+    <div class="buttoncontainer">
+      <button class="resetbutton">RESET</button>
+      <button
+        id="openModalBtn"
+        class="contact-me-button"
+      >
+        CONTACT
+      </button>
+    </div>
+
     <img
       src="images/ramin-khatibi-OG8L9s1bYKc-unsplash.jpg"
       alt="noise texture"
       class="noisetexture"
     />
-    <div class="container">
+    <main class="container">
+      <div
+        id="myModal"
+        class="modal"
+      >
+        <div class="modal-content">
+          <span
+            class="close"
+            id="closeModalBtn"
+            >&times;</span
+          >
+          <p>Your modal content goes here.</p>
+        </div>
+      </div>
+
       <div class="sides-left">
         <section class="left">
-          <h1>UI / UX</h1>
+          <h1>THEME 1</h1>
         </section>
+        <div class="imagecontainer-left">
+          <h3>Hello</h3>
+          <h3>Hello</h3>
+          <h3>Hello</h3>
+        </div>
       </div>
       <div class="sides-right">
         <section class="right">
-          <h1>FRONTEND</h1>
+          <h1>THEME 2</h1>
         </section>
+        <div class="imagecontainer-right">
+          <h3>Hello</h3>
+          <h3>Hello</h3>
+          <h3>Hello</h3>
+        </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
