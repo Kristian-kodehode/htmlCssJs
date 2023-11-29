@@ -16,7 +16,7 @@
   z-index: 999;
   left: 4%;
   top: 40px;
-  display: flex;
+  display: none;
   gap: 1rem;
 }
 .resetbutton,
