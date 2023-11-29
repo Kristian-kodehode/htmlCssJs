@@ -49,19 +49,13 @@ const eventHandlerRight = () => {
 };
 
 const resetEvents = () => {
-  if (window.innerWidth > 1080) {
-    sidesLeft.style.width = "50%";
-    sidesLeft.style.height = "100%";
+  const isLargeScreen = window.innerWidth > 1080;
 
-    sidesRight.style.width = "50%";
-    sidesRight.style.height = "100%";
-  } else {
-    sidesLeft.style.width = "100%";
-    sidesLeft.style.height = "50%";
-    sidesRight.style.width = "100%";
-    sidesRight.style.height = "50%";
-  }
-  console.log("Reset button clicked");
+  sidesLeft.style.width = isLargeScreen ? "50%" : "100%";
+  sidesLeft.style.height = isLargeScreen ? "100%" : "50%";
+
+  sidesRight.style.width = isLargeScreen ? "50%" : "100%";
+  sidesRight.style.height = isLargeScreen ? "100%" : "50%";
 };
 
 sidesLeft.addEventListener("click", eventHandlerLeft);
