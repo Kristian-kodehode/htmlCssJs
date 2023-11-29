@@ -49,7 +49,7 @@ body {
 .noisetexture {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   mix-blend-mode: soft-light;
   opacity: 0.05;
   pointer-events: none;
