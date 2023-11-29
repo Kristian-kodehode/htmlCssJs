@@ -16,7 +16,7 @@
   z-index: 999;
   left: 4%;
   top: 40px;
-  display: none;
+  display: flex;
   gap: 1rem;
 }
 .resetbutton,
@@ -46,17 +46,16 @@ body {
   font-family: "Barlow Condensed", sans-serif;
   background-color: #fffaf1;
 }
-.noisetexture {
+/* .noisetexture {
   position: absolute;
   width: 100vw;
   height: 100dvh;
-  z-index: 9999;
-  mix-blend-mode: soft-light;
-  opacity: 0.95;
 
+  mix-blend-mode: soft-light;
+  opacity: 0.05;
   pointer-events: none;
   background-size: cover;
-}
+} */
 
 section {
   position: relative;
