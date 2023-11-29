@@ -50,8 +50,10 @@ body {
   position: absolute;
   width: 100vw;
   height: 100dvh;
+  z-index: 9999;
   mix-blend-mode: soft-light;
-  opacity: 0.05;
+  opacity: 0.95;
+
   pointer-events: none;
   background-size: cover;
 }
