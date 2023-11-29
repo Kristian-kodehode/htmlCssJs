@@ -113,13 +113,14 @@ img {
 }
 .imagecontainer-left,
 .imagecontainer-right {
+  padding: 1rem;
   display: none;
 }
-/* .sides-left:hover,
-.sides-right:hover {
-  padding: 1rem;
-  cursor: pointer;
-} */
+
+.figmaprototypecontainer {
+  width: 100%;
+  height: 450px;
+}
 
 .left,
 .right {
