@@ -7,12 +7,6 @@ const themeheadingRight = document.querySelector(".themeheading-right");
 const descriptiontext = document.querySelector(".descriptiontext");
 const resetbutton = document.querySelector(".resetbutton");
 
-// const handleWindowResize = () => {
-//   resetEvents();
-// };
-
-// window.addEventListener("resize", handleWindowResize);
-
 let isWindowAboveThreshold = window.innerWidth > 1080;
 
 const handleWindowResize = () => {
