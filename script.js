@@ -33,13 +33,15 @@ const eventHandlerLeft = () => {
   if (window.innerWidth > 1080) {
     sidesLeft.style.width = "95%";
     sidesRight.style.width = "5%";
+
     sidesLeft.style.overflowY = "scroll";
     sidesRight.style.overflowY = "hidden";
-    imageContainerRight.style.display = "none";
 
     imageContainerLeft.style.display = "block";
-    themeheadingRight.style.rotate = "90deg";
+    imageContainerRight.style.display = "none";
+
     themeheadingLeft.style.rotate = "0deg";
+    themeheadingRight.style.rotate = "90deg";
   } else {
     sidesLeft.style.height = "95%";
     sidesRight.style.height = "5%";
@@ -47,8 +49,8 @@ const eventHandlerLeft = () => {
     sidesLeft.style.overflowY = "scroll";
     sidesRight.style.overflowY = "hidden";
 
-    imageContainerRight.style.display = "none";
     imageContainerLeft.style.display = "block";
+    imageContainerRight.style.display = "none";
 
     themeheadingLeft.style.rotate = "0deg";
     themeheadingRight.style.rotate = "0deg";
@@ -61,11 +63,11 @@ const eventHandlerRight = () => {
     sidesLeft.style.width = "5%";
     sidesRight.style.width = "95%";
 
-    sidesRight.style.overflowY = "scroll";
     sidesLeft.style.overflowY = "hidden";
+    sidesRight.style.overflowY = "scroll";
 
-    imageContainerRight.style.display = "block";
     imageContainerLeft.style.display = "none";
+    imageContainerRight.style.display = "block";
 
     themeheadingLeft.style.rotate = "-90deg";
     themeheadingRight.style.rotate = "0deg";
@@ -73,11 +75,11 @@ const eventHandlerRight = () => {
     sidesLeft.style.height = "5%";
     sidesRight.style.height = "95%";
 
-    sidesRight.style.overflowY = "scroll";
     sidesLeft.style.overflowY = "hidden";
+    sidesRight.style.overflowY = "scroll";
 
-    imageContainerRight.style.display = "block";
     imageContainerLeft.style.display = "none";
+    imageContainerRight.style.display = "block";
 
     themeheadingLeft.style.rotate = "0deg";
     themeheadingRight.style.rotate = "0deg";
