@@ -10,6 +10,9 @@
   --mygreen: #093a39;
   --myyellow: #f8ab21;
   --mywhite: #fffaf1;
+  /* --mygreen: #f29b30; */
+  /* --myyellow: #d9601a; */
+  /* --mywhite: #fffaf1; */
 }
 .buttoncontainer {
   position: absolute;
@@ -120,6 +123,11 @@ img {
   align-items: center;
   justify-content: center;
 }
+.heroimage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 .themeheading-left {
   rotate: 0deg;
   transition: 0.5s;
@@ -130,10 +138,10 @@ img {
 }
 
 .left {
-  background-color: #093a39;
+  background-color: var(--mygreen);
 }
 .right {
-  background-color: #f8ab21;
+  background-color: var(--myyellow);
 }
 
 /* MODAL */
