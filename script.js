@@ -2,6 +2,8 @@ const sidesLeft = document.querySelector(".sides-left");
 const sidesRight = document.querySelector(".sides-right");
 const imageContainerLeft = document.querySelector(".imagecontainer-left");
 const imageContainerRight = document.querySelector(".imagecontainer-right");
+const themeheadingLeft = document.querySelector(".themeheading-left");
+const themeheadingRight = document.querySelector(".themeheading-right");
 const descriptiontext = document.querySelector(".descriptiontext");
 const resetbutton = document.querySelector(".resetbutton");
 
@@ -34,14 +36,22 @@ const eventHandlerLeft = () => {
     sidesLeft.style.overflowY = "scroll";
     sidesRight.style.overflowY = "hidden";
     imageContainerRight.style.display = "none";
+
     imageContainerLeft.style.display = "block";
+    themeheadingRight.style.rotate = "90deg";
+    themeheadingLeft.style.rotate = "0deg";
   } else {
     sidesLeft.style.height = "95%";
     sidesRight.style.height = "5%";
+
     sidesLeft.style.overflowY = "scroll";
     sidesRight.style.overflowY = "hidden";
+
     imageContainerRight.style.display = "none";
     imageContainerLeft.style.display = "block";
+
+    themeheadingLeft.style.rotate = "0deg";
+    themeheadingRight.style.rotate = "0deg";
   }
 };
 
@@ -50,17 +60,27 @@ const eventHandlerRight = () => {
   if (window.innerWidth > 1080) {
     sidesLeft.style.width = "5%";
     sidesRight.style.width = "95%";
+
     sidesRight.style.overflowY = "scroll";
     sidesLeft.style.overflowY = "hidden";
+
     imageContainerRight.style.display = "block";
     imageContainerLeft.style.display = "none";
+
+    themeheadingLeft.style.rotate = "-90deg";
+    themeheadingRight.style.rotate = "0deg";
   } else {
     sidesLeft.style.height = "5%";
     sidesRight.style.height = "95%";
+
     sidesRight.style.overflowY = "scroll";
     sidesLeft.style.overflowY = "hidden";
+
     imageContainerRight.style.display = "block";
     imageContainerLeft.style.display = "none";
+
+    themeheadingLeft.style.rotate = "0deg";
+    themeheadingRight.style.rotate = "0deg";
   }
 };
 
@@ -69,6 +89,9 @@ const resetEvents = () => {
 
   sidesRight.style.overflowY = "hidden";
   sidesLeft.style.overflowY = "hidden";
+
+  themeheadingLeft.style.rotate = "0deg";
+  themeheadingRight.style.rotate = "0deg";
 
   imageContainerLeft.style.display = "none";
   imageContainerRight.style.display = "none";
