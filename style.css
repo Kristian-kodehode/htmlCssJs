@@ -34,12 +34,7 @@
 }
 .resetbutton:hover,
 .contact-me-button:hover {
-  /* transform: scale(1.1); */
   background-color: #ffca67;
-}
-.resetbutton:active,
-.contact-me-button:active {
-  border: 2px solid var(--mywhite);
 }
 
 body {
@@ -70,22 +65,12 @@ h1 {
   text-align: center;
   margin-top: 0rem;
   position: absolute;
-  /* top: 40%; */
 }
 h1:hover {
   color: #ffffff5a;
   -webkit-text-stroke-width: 0px;
 }
-.imagecontainer {
-  overflow: hidden;
-  border-radius: 1rem;
-  border: 2px solid var(--mywhite);
-  width: 40vw;
-  height: 40vh;
-  /* background-size: cover; */
-  mix-blend-mode: multiply;
-  opacity: 0.1;
-}
+
 img {
   width: 100%;
 }
@@ -202,5 +187,10 @@ img {
   .right {
     width: 100%;
     height: 100%;
+  }
+
+  .resetbutton:hover,
+  .contact-me-button:hover {
+    background-color: var(--myyellow);
   }
 }

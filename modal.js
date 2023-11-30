@@ -1,9 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const openModalBtn = document.getElementById("openModalBtn");
+  const aboutBtn = document.getElementById("aboutBtn");
+  const contactBtn = document.getElementById("contactBtn");
+
   const closeModalBtn = document.getElementById("closeModalBtn");
   const modal = document.getElementById("myModal");
 
-  openModalBtn.addEventListener("click", function () {
+  aboutBtn.addEventListener("click", function () {
+    modal.style.display = "block";
+  });
+  contactBtn.addEventListener("click", function () {
     modal.style.display = "block";
   });
 
